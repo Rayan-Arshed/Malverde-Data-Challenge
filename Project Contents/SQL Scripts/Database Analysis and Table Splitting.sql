@@ -1,8 +1,10 @@
 USE uk_sanctions_data;
 
 -- Quick check of data, used at multiple stages to analyse results --
-SELECT * FROM uk_sanctions_data WHERE name_0 = '1-P'
+SELECT * FROM uk_sanctions_data
 LIMIT 10;
+
+SELECT COUNT(*) FROM uk_sanctions_data;
 
 -- Looking at the non-latin script rows --
 SELECT DISTINCT name_non_latin_script, non_latin_script_type, non_latin_script_language FROM uk_sanctions_data
