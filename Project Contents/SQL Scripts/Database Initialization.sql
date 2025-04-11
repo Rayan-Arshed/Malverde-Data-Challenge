@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS uk_sanctions_data(
 	passport_number varchar(255),
 	passport_details text,
 	national_identification_number varchar(255),
-	national_identification_details varchar(255),
+	national_identification_details text,
 	position text,
 	address_1 varchar(255),
 	address_2 varchar(255),
