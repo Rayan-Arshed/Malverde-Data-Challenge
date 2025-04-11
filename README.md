@@ -62,6 +62,10 @@ This section requires no user input, except loading the script titled '2 - Datab
 This section also requires no user input to execute. Feel free to read my analysis of the data in my doc, and my code, and run the script '3 - Individual Analysis', which will analyse the data, and provide statistics that I looked at, and queries to check for duplicates and data consistency.
 
 ## Step 5 - Export Individual Data
-This step will require some user input. Open the script '4 - Individual Data Export', and run the first query. This will show your computer-specific folder where MySQL will have permissions to export data to. This will be used in the next query to export the Individual table as a CSV to that folder. Copy the path provided, and paste it in the 'INTO OUTFILE' line in the next query, and ensure the backslashes are changed to forward slashes -> "/"
+This step will require some user input. Open the script '4 - Individual Data Export', and run the first query. This will show your computer-specific folder where MySQL will have permissions to export data to. This will be used in the next query to export the Individual table as a CSV to that folder. Copy the path provided, and paste it in the 'INTO OUTFILE' line in the next query, and ensure the backslashes are changed to forward slashes -> "/" like so:
+
+![image](https://github.com/user-attachments/assets/c7c21651-47b2-4ff2-bfc2-62b90b981609)
+
+![image](https://github.com/user-attachments/assets/4994c77b-4621-46ac-be1a-cc7f992b6a0b)
 
 This query will add column headings, and then export the contents of the table to that directory, which you can then move to this projects' Final Data folder for ease of access. This data can then be imported into any systems that support CSV files for data analysis, cleansing, or usage, such as creating a Watchlist of the UK sanctioned individuals. 
